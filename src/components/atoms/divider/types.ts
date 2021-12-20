@@ -1,0 +1,1 @@
+export type TProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLHRElement>, HTMLHRElement> & {}

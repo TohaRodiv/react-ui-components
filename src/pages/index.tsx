@@ -1,22 +1,14 @@
-import { Icon } from "#components/icon/Icon";
+import { Button } from "#components/atoms/button/Button";
+import { Divider } from "#components/atoms/divider";
+import { ProductThumb } from "#components/organisms/product-thumb/ProductThumb";
 import type { NextPage } from "next";
-import Link from "next/link";
 
 const Home: NextPage = () => {
 	return (
-		<>
-			<div className="section top-section">
-				<h3 className="section__head">Компоненты</h3>
-				<div className="section__body">
-					<ul>
-						<li>
-							<Link href="/components">Компоненты</Link>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</>
+		<div>
+			<ProductThumb />
+		</div>
 	);
 }
 
-export default Home
+export default Home;

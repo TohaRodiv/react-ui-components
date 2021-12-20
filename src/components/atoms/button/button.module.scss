@@ -1,0 +1,61 @@
+.btn {
+	-webkit-appearance: none;
+	border: 0;
+	outline: 0;
+	display: inline-flex;
+	font-family: inherit;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+	outline: 2px solid transparent;
+	transition: 350ms;
+
+	&:hover {
+		transition: 350ms;
+	}
+
+	&:focus {
+		outline: 2px solid rgb(0, 166, 243);
+		transition: 350ms;
+	}
+
+
+	&--theme {
+		&--alpha {
+			background-color: #DDD;
+			color: #000;
+
+			&:hover {
+				background-color: #000;
+				color: #FFF;
+			}
+		}
+
+		&--betta {
+			background-color: #000;
+			color: #FFF;
+
+			&:hover {
+				background-color: #DDD;
+				color: #000;
+			}
+		}
+	}
+
+	&--size {
+		&--small {
+			padding: 0.5em .8rem;
+		}
+
+		&--middle {
+			padding: .8em 1.5em;
+		}
+
+		&--large {
+			padding: 1em 1.8em;
+		}
+	}
+}
